@@ -1,6 +1,7 @@
 化学物質等の流出やその拡散への初期対応を支援する、化学物質リスク管理のための迅速対応統合プラットフォームの開発を行いました。
 
-[ダウンロードはこちら](https://github.com/tkhrotn/s17-2-4/releases/download/v0.1/sample-win32-x64.zip)
+ * [プラットフォームのダウンロード](https://github.com/tkhrotn/s17-2-4/releases/download/v0.1/sample-win32-x64.zip)
+ * [サンプルデータのダウンロード](https://github.com/tkhrotn/s17-2-4/raw/main/sampledata.zip)
 
 ## スクリーンショット
 ### 基盤地図情報ツール
@@ -17,6 +18,25 @@
 
 ### 曝露量推計ツール
 ![曝露量推計ツール](img/expo.png "曝露量推計ツール")
+
+## 使い方
+### プラットフォームの実行
+zipファイルを展開し「sample.exe」を実行するとプログラムが立ち上がります。
+初回起動時のみセキュリティの確認ダイアログが出てくるので実行を許可してください。
+
+### サンプルデータの使用
+あらかじめzipファイルを展開して利用します。
+
+#### 大気拡散マッピング
+右メニューの「ファイルから読み込む」で「空間線量率データ.xlsx」を開いてください。
+
+#### 水域流出マッピング
+右メニュー「河川」の「データ読み込み」で以下のファイルを読み込みます。
+ * 観測データ(csv)を読み込む: data.csv
+ * 観測点（shp）を読み込む:river.zip　river_stations.dbf　river_stations.prj　river_stations.shp　river_stations.shx
+   * ファイル選択ダイアログで5つのファイルをすべて選択して読み込みます。
+   * river.zipは展開せずzipファイルのまま読み込みます。
+ * 計算パラメータ（csv）を読み込む: parameters.csv
 
 ## 研究メンバー
  * 高橋邦彦 (東京医科歯科大学 M&Dデータ科学センター、S17-2(4)サブテーマリーダー)
